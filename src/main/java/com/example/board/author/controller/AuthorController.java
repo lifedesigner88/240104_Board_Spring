@@ -7,6 +7,7 @@ import com.example.board.author.dto.AuthorSaveReqDto;
 import com.example.board.author.service.AuthorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,6 +24,7 @@ public class AuthorController {
         this.service = service;
     }
 
+
     @PostMapping("/author/save")
     @ResponseBody
     public Author authorSave(AuthorSaveReqDto dto) {
@@ -30,15 +32,19 @@ public class AuthorController {
     }
 
     @GetMapping("/author/list")
-    @ResponseBody
-    public List<AuthorListResDto> authorList() {
-        return service.findAll();
+    public String authorList(Model model) {
+        List<AuthorListResDto> authors = service.findAll();
+        model.addAttribute("authors", authors);
+        return "author/author-list";
     }
 
-    @ResponseBody
     @GetMapping("/author/detail/{id}")
-    public AuthorDetailResDto authorDetail(@PathVariable Long id) {
-        System.out.println(id);
-        return service.findById(id);
+    public String authorDetail(@PathVariable Long id, Model model) {
+        AuthorDetailResDto author = service.findById(id);
+        model.addAttribute("author", author);
+        return "author/author-detail";
+
     }
+
+
 }
