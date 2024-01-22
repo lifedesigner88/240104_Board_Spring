@@ -9,5 +9,5 @@ spring:
     database: mysql
     generate-ddl: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     show-sql: true
