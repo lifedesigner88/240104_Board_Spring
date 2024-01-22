@@ -1,15 +1,13 @@
 package com.example.board.author.domain;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
 import org.hibernate.annotations.CreationTimestamp;
-
+import org.hibernate.annotations.UpdateTimestamp;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Data
+@Getter
 @Entity
-@NoArgsConstructor
 public class Author {
 
     @Id
@@ -31,14 +29,15 @@ public class Author {
     @CreationTimestamp
     private LocalDateTime createdTime;
 
-    @Column(columnDefinition = "TIMESTAMP ON UPDATE CURRENT_TIMESTAMP")
+    @UpdateTimestamp
     private LocalDateTime updatedTime;
+
+    public Author() {}
 
     public Author(String name, String email, String password) {
         this.name = name;
         this.email = email;
         this.password = password;
     }
-
 }
 
