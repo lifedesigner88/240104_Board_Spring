@@ -28,12 +28,21 @@ public class AuthorService {
         String reqRole = req.getRole();
         if (reqRole == null || reqRole.equals("admin")) role = Role.ADMIN;
         else role = Role.USER;
-        return repository.save(
-                new Author(
-                        req.getName(),
-                        req.getEmail(),
-                        req.getPassword(),
-                        role));
+
+        Author author = Author.builder()
+                .name(req.getName())
+                .email(req.getEmail())
+                .password(req.getPassword())
+                .build();
+
+//      Author author = new Author(
+//                        req.getName(),
+//                        req.getEmail(),
+//                        req.getPassword(),
+//                        role));
+
+        return repository.save(author);
+
     }
 
 //    Read

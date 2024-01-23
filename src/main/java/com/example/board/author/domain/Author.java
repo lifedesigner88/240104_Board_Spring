@@ -1,9 +1,11 @@
 package com.example.board.author.domain;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
@@ -40,6 +42,7 @@ public class Author {
 
     public Author() {}
 
+    @Builder
     public Author(String name, String email, String password, Role role) {
         this.name = name;
         this.email = email;
