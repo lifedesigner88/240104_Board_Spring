@@ -8,7 +8,6 @@ import com.example.board.post.dto.PostUpdateReqDto;
 import com.example.board.post.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -56,7 +55,6 @@ public class PostService {
 
 //    Delete
     public void deletePost(Long id) {repository.deleteById(id);}
-
 
 
     /* ECT */

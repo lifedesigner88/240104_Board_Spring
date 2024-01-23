@@ -10,37 +10,28 @@
     <div th:replace="header :: headerFragment"></div>
     <div class="container">
         <div class="page-header" style="padding: 15px"><h1>게시글 상세보기</h1></div>
-
     <table class="table">
-
         <tr>
             <td>작성일</td>
             <td th:text="${post.createdTime}"></td>
         </tr>
-
         <tr>
             <td>ID</td>
             <td th:text="${post.id}"></td>
         </tr>
-
         <tr>
             <td>제목</td>
             <td th:text="${post.title}"></td>
         </tr>
-
         <tr>
             <td>내용</td>
             <td th:text="${post.content}" style="white-space: pre-wrap"></td>
         </tr>
-
     </table>
         <div class="pull-right">
             <button class="btn btn-primary" onclick="display()">수정</button>
-
-            <a th:href="@{|/post/delete/${post.id}|}">
-                <button class="btn btn-primary"> 삭제 </button>
-        </a>
-
+        <a th:href="@{|/post/delete/${post.id}|}">
+                <button class="btn btn-primary"> 삭제 </button></a>
         </div>
     </div>
 
@@ -54,23 +45,17 @@
        <label class="form-control" for="email" style="padding: 15px">내용
            <textarea id="email" name="content" style="height: 200px"
                      class="form-control" th:text="${post.content}" ></textarea>
-
        </label>
-
         <p style="padding: 10px"><button class="btn btn-primary" type="submit">Submit</button></p>
-
     </form>
 </div>
 
-
 </body>
 <script>
-
-    function display() {
-        document.getElementById("update-form").style.display = "block";
-    }
-
-
+    function display() {document.getElementById("update-form").style.display = "block";}
 </script>
-
 </html>
+
+
+
+
