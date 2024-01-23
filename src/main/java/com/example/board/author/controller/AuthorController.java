@@ -12,50 +12,56 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
 @Controller
+@RequestMapping("author")
 public class AuthorController {
 
     private final AuthorService service;
-
     public AuthorController(@Autowired AuthorService service) {
         this.service = service;
     }
 
-    @GetMapping("/author/create")
+
+//    Create
+    @GetMapping("create")
     public String authorCreate(){
         return "author/author-create";
     }
 
-    @PostMapping("/author/create")
+    @PostMapping("create")
     public String authorSave(AuthorSaveReqDto dto) {
         Author author = service.save(dto);
         return "redirect:/author/detail/" + author.getId();
     }
 
-    @GetMapping("/author/list")
-    public String authorList(Model model) {
+//    Read
+    @GetMapping("list")
+    public String getAllAuthors(Model model) {
         List<AuthorListResDto> authors = service.findAll();
         model.addAttribute("authors", authors);
         return "author/author-list";
     }
 
-    @GetMapping("/author/detail/{id}")
+    @GetMapping("detail/{id}")
     public String authorDetail(@PathVariable Long id, Model model) {
         AuthorDetailResDto author = service.findDetailById(id);
         model.addAttribute("author", author);
         return "author/author-detail";
     }
 
-    @PostMapping("/author/update/{id}")
+//    Update
+    @PostMapping("update/{id}")
     public String updateAuthor(@PathVariable Long id, AuthorUpdateReqDto dto) {
         AuthorDetailResDto resDto = service.update(id, dto);
         return "redirect:/author/detail/" + resDto.getId();
     }
 
-    @GetMapping("/author/delete/{id}")
+//    Delete
+    @GetMapping("delete/{id}")
     public String deleteAuthor(@PathVariable Long id) {
         service.delete(id);
         return "redirect:/author/list";

@@ -28,4 +28,16 @@ public class Post {
     @UpdateTimestamp
     private LocalDateTime updatedTime;
 
+    public Post(){};
+
+    public Post (String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+
+    public void postUpdate (String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+
 }

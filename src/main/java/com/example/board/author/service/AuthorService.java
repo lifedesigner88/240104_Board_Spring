@@ -22,6 +22,7 @@ public class AuthorService {
         this.repository = repository;
     }
 
+//    Create
     public Author save(AuthorSaveReqDto req){
         Role role;
         String reqRole = req.getRole();
@@ -35,14 +36,15 @@ public class AuthorService {
                         role));
     }
 
+//    Read
     public List<AuthorListResDto> findAll(){
         List<AuthorListResDto> dtoList = new ArrayList<>();
-        for(Author res : repository.findAll())
+        for(Author author : repository.findAll())
             dtoList.add(
                     new AuthorListResDto(
-                            res.getId(),
-                            res.getName(),
-                            res.getEmail()));
+                            author.getId(),
+                            author.getName(),
+                            author.getEmail()));
         return dtoList;
     }
 
@@ -50,12 +52,22 @@ public class AuthorService {
         return makeResDto(findById(id));
     }
 
+//    Update
     public AuthorDetailResDto update (Long id, AuthorUpdateReqDto dto){
         Author author = findById(id);
         author.updateAuthor(
                 dto.getName(),
                 dto.getPassword());
         return makeResDto(repository.save(author));
+    }
+
+//    Delete
+    public void delete(Long id){repository.deleteById(id);}
+
+
+    /* ECT */
+    public Author findById(Long id) throws EntityNotFoundException {
+        return repository.findById(id).orElseThrow(EntityNotFoundException::new);
     }
 
     public AuthorDetailResDto makeResDto (Author a){
@@ -68,16 +80,9 @@ public class AuthorService {
                 a.getName(),
                 a.getEmail(),
                 a.getPassword(),
-                roleString,
-                a.getCreatedTime());
+                a.getCreatedTime(),
+                roleString);
     }
 
-    public Author findById(Long id) throws EntityNotFoundException {
-        return repository
-                    .findById(id)
-                    .orElseThrow(EntityNotFoundException::new);
-    }
-
-    public void delete(Long id){repository.deleteById(id);}
 
 }

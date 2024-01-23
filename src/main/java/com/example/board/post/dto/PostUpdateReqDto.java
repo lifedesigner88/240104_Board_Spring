@@ -5,9 +5,7 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class PostListResDto {
-
-    private Long id;
-    private String title;
-
+public class PostUpdateReqDto {
+        private String title;
+        private String content;
 }
