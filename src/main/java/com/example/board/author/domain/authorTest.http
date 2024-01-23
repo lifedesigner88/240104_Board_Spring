@@ -1,0 +1,10 @@
+
+###
+POST http://localhost:8080/author/create
+Content-Type: application/x-www-form-urlencoded
+
+name = 세종 &
+email = li1323fe@n3aver1.com &
+password = 124123 &
+role =;
+

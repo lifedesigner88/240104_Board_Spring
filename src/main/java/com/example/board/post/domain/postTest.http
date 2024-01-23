@@ -1,0 +1,33 @@
+
+###
+GET http://localhost:8080/post/list
+
+
+###
+POST http://localhost:8080/post/create
+Content-Type: application/x-www-form-urlencoded
+
+title = 어밴져2 &
+content = ㅁ나어림;나얼ㅏㄴ멍ㄹ샤벚가ㅓaskdjfalskjdflskjdfasdfl;
+
+
+###
+GET http://localhost:8080/post/detail/2
+
+<> 2024-01-23T142648.200.json
+
+###
+POST http://localhost:8080/post/update/3
+Content-Type: application/x-www-form-urlencoded
+
+title = f127982 &
+content = 동해물과 백두산이 마르고 닳도록;
+
+<> 2024-01-23T143901.200.json
+<> 2024-01-23T143833.200.json
+<> 2024-01-23T143820.404.json
+
+###
+GET http://localhost:8080/post/delete/4
+
+<> 2024-01-23T144631.200.txt
