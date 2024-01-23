@@ -9,7 +9,7 @@
 
     <div th:replace="header :: headerFragment"></div>
     <div class="container">
-        <div class="page-header" style="padding: 20px"><h1>회원 상세보기</h1></div>
+        <div class="page-header" style="padding: 15px"><h1>회원 상세보기</h1></div>
 
     <table class="table">
         <tr>
@@ -31,33 +31,46 @@
             <td>PASSWORD</td>
             <td th:text="${author.password}"></td>
         </tr>
+
+        <tr>
+            <td>Role</td>
+            <td th:text="${author.role}"></td>
+        </tr>
+
+
         <tr>
             <td>CREATEDTIME</td>
             <td th:text="${author.createdTime}"></td>
         </tr>
 
     </table>
+        <div class="pull-right">
+            <button class="btn btn-primary" onclick="display()">수정</button>
 
+            <a th:href="@{|/author/delete/${author.id}|}">
+                <button class="btn btn-primary"> 삭제 </button>
+        </a>
+
+        </div>
     </div>
 
-<div class="pull-right">
-<button class="btn btn-primary"  onclick="display()">수정</button>
+<div id="update-form" style="display: none" class="mt-4">
+    <form class="form-group" th:action="@{|/author/update/${author.id}|}" method="post" style="padding: 80px">
 
-<a th:href="@{/member/delete(id=${author.getId()})}">
-    <button class="btn btn-primary"> 삭제 </button>
-</a>
+       <label class="form-control"  for="name" style="padding: 15px">이름 :
+            <input  class="form-control" id="name" name="name" type="text" th:value="${author.getName()}">
+       </label>
 
-</div>
+       <label class="form-control" for="email" style="padding: 15px">이메일 :
+            <input  class="form-control" id="email" name="email" type="text" th:value="${author.getEmail()}" readonly>
+       </label>
 
-<div id="update-form" style="display: none">
-    <form action="/member/update" method="post" style="padding: 150px">
-        <label> Update
-            <p>아이디 : </p><input name="id" type="text" th:value="${author.getId()}" readonly>
-            <p>이름 : </p><input name="name" type="text" th:value="${author.getName()}">
-            <p>이메일 : </p><input name="email" type="text" th:value="${author.getEmail()}" readonly>
-            <p>비밀번호 : </p><input name="password" type="text" th:value="${author.getPassword()}">
-        </label>
-        <p><button type="submit">Submit</button></p>
+       <label class="form-control" for="password" style="padding: 15px">비밀번호 :
+            <input  class="form-control" id="password" name="password" type="text" th:value="${author.getPassword()}">
+       </label>
+
+        <p style="padding: 10px"><button class="btn btn-primary" type="submit">Submit</button></p>
+
     </form>
 </div>
 

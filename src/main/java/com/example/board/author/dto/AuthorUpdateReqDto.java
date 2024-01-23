@@ -3,15 +3,11 @@ package com.example.board.author.dto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import java.time.LocalDateTime;
-
 @Getter
 @AllArgsConstructor
-public class AuthorDetailResDto {
-    private Long id;
+public class AuthorUpdateReqDto {
+
     private String name;
-    private String email;
     private String password;
-    private String role;
-    private LocalDateTime createdTime;
+
 }
