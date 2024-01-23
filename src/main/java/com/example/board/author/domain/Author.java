@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 public class Author {
 
     @Id
+    @Setter
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -29,9 +30,11 @@ public class Author {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+    @Setter
     @CreationTimestamp
     private LocalDateTime createdTime;
 
+    @Setter
     @UpdateTimestamp
     private LocalDateTime updatedTime;
 

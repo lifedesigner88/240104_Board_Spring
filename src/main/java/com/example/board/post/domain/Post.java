@@ -1,6 +1,7 @@
 package com.example.board.post.domain;
 
 import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 public class Post {
 
     @Id
+    @Setter
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -22,13 +24,15 @@ public class Post {
     @Column(length = 3000, nullable = false)
     private String content;
 
+    @Setter
     @CreationTimestamp
     private LocalDateTime createdTime;
 
+    @Setter
     @UpdateTimestamp
     private LocalDateTime updatedTime;
 
-    public Post(){};
+    public Post(){}
 
     public Post (String title, String content) {
         this.title = title;
