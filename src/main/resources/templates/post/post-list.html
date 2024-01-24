@@ -20,11 +20,11 @@
                 </tr>
             </thead>
             <tbody>
-            <tr th:each = "a : ${posts}">
-                <td th:text = "${a.id}"></td>
-                <td th:text = "${a.title}"></td>
-                <td th:text = "${a.author_email}"></td>
-                <td><a th:href="@{|/post/detail/${a.id}|}">상세보기</a></td>
+            <tr th:each = "post : ${posts}">
+                <td th:text = "${post.id}"></td>
+                <td th:text = "${post.title}"></td>
+                <td th:text = "${post.author_email}"></td>
+                <td><a th:href="@{|/post/detail/${post.id}|}">상세보기</a></td>
             </tr>
             </tbody>
 

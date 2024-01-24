@@ -6,6 +6,7 @@ import com.example.board.author.dto.AuthorListResDto;
 import com.example.board.author.dto.AuthorSaveReqDto;
 import com.example.board.author.dto.AuthorUpdateReqDto;
 import com.example.board.author.service.AuthorService;
+import com.example.board.post.dto.PostListResDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -49,7 +50,9 @@ public class AuthorController {
     @GetMapping("detail/{id}")
     public String authorDetail(@PathVariable Long id, Model model) {
         AuthorDetailResDto author = service.findDetailById(id);
+        List<PostListResDto> list = author.getPosts();
         model.addAttribute("author", author);
+        model.addAttribute("posts", list);
         return "author/author-detail";
     }
 

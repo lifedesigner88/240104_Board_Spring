@@ -6,7 +6,6 @@ import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
@@ -27,7 +26,7 @@ public class Post {
     private String content;
 
 //  @JoinColumn(nullable = false, name="author_email", referencedColumnName = "email")
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn // 설정 없으면 pk에 걸린다.
     private Author author;
 

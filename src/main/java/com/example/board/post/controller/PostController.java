@@ -51,7 +51,6 @@ public class PostController {
     public String updatePost(@PathVariable Long id, PostUpdateReqDto dto) {
         Post post =  service.update(id, dto);
         return "redirect:/post/detail/" + post.getId();
-
     }
 
 //    Delete

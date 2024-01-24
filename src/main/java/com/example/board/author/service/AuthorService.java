@@ -7,6 +7,8 @@ import com.example.board.author.dto.AuthorListResDto;
 import com.example.board.author.dto.AuthorSaveReqDto;
 import com.example.board.author.dto.AuthorUpdateReqDto;
 import com.example.board.author.repository.AuthorRepository;
+import com.example.board.post.domain.Post;
+import com.example.board.post.dto.PostListResDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -62,7 +64,8 @@ public class AuthorService {
                     new AuthorListResDto(
                             author.getId(),
                             author.getName(),
-                            author.getEmail()
+                            author.getEmail(),
+                            author.getPosts().size()
                     ));
         return dtoList;
     }
@@ -94,13 +97,27 @@ public class AuthorService {
         String roleString;
         if (roleRes == null || roleRes.equals(Role.ADMIN)) roleString = "관리자";
         else roleString = "유저";
+
+        List<PostListResDto> dtoList = new ArrayList<>();
+        for(Post p : a.getPosts())
+            dtoList.add(
+                    new PostListResDto(
+                            p.getId(),
+                            p.getTitle(),
+                            null
+                    ));
+
+
         return new AuthorDetailResDto(
                 a.getId(),
                 a.getName(),
                 a.getEmail(),
                 a.getPassword(),
                 a.getCreatedTime(),
-                roleString);
+                a.getPosts().size(),
+                dtoList,
+                roleString
+        );
     }
 
 

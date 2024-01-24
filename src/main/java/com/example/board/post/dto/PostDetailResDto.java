@@ -13,6 +13,8 @@ public class PostDetailResDto {
     private String title;
     private String content;
     private LocalDateTime createdTime;
+    private String authorEmail;
+    private String authorName;
 
 
 }

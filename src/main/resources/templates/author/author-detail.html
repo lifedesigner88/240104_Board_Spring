@@ -12,6 +12,12 @@
         <div class="page-header" style="padding: 15px"><h1>회원 상세보기</h1></div>
 
     <table class="table">
+
+        <tr>
+            <td style="font-weight: bold">CREATEDTIME</td>
+            <td style="font-weight: bold" th:text="${author.createdTime}"></td>
+        </tr>
+
         <tr>
             <td>ID</td>
             <td th:text="${author.id}"></td>
@@ -36,11 +42,23 @@
             <td>Role</td>
             <td th:text="${author.role}"></td>
         </tr>
-
+        <tr>
+            <td>작성글 수</td>
+            <td th:text="${author.postSize}"></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td> </td>
+        </tr>
 
         <tr>
-            <td>CREATEDTIME</td>
-            <td th:text="${author.createdTime}"></td>
+            <td style="font-weight: bold">** 작성한 글 ID **</td>
+            <td style="font-weight: bold">** 작성한 글 제목 **</td>
+        </tr>
+
+        <tr th:each = "post : ${posts}">
+            <td th:text = "${post.id}"></td>
+            <td th:text = "${post.title}"></td>
         </tr>
 
     </table>

@@ -7,8 +7,8 @@ import lombok.Getter;
 @AllArgsConstructor
 public class PostCreateReqDto {
 
-    private Long id;
     private String title;
     private String content;
+    private String email;
 
 }

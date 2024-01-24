@@ -16,6 +16,7 @@
                     <th>id</th>
                     <th>이름</th>
                     <th>email</th>
+                    <th>게시글 수</th>
                     <th>#</th>
                 </tr>
             </thead>
@@ -24,6 +25,7 @@
                 <td th:text = "${a.id}"></td>
                 <td th:text = "${a.name}"></td>
                 <td th:text = "${a.email}"></td>
+                <td th:text = "${a.postSize}"></td>
                 <td><a th:href="@{|/author/detail/${a.id}|}">상세보기</a></td>
             </tr>
             </tbody>

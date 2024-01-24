@@ -27,6 +27,17 @@
             <td>내용</td>
             <td th:text="${post.content}" style="white-space: pre-wrap"></td>
         </tr>
+
+        <tr>
+            <td>작성자</td>
+            <td th:text="${post.authorName}" style="white-space: pre-wrap"></td>
+        </tr>
+        <tr>
+            <td>작성자 메일</td>
+            <td th:text="${post.authorEmail}" style="white-space: pre-wrap"></td>
+        </tr>
+
+
     </table>
         <div class="pull-right">
             <button class="btn btn-primary" onclick="display()">수정</button>
