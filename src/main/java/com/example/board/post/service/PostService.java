@@ -22,10 +22,11 @@ public class PostService {
 
 //    Create
     public Post create(PostCreateReqDto dto) {
-        return repository.save(
-                new Post(
-                        dto.getTitle(),
-                        dto.getContent()));
+        Post post = Post.builder()
+               .title(dto.getTitle())
+               .content(dto.getContent())
+               .build();
+        return repository.save(post);
     }
 
 //    Read

@@ -1,5 +1,6 @@
 package com.example.board.post.domain;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
@@ -34,6 +35,7 @@ public class Post {
 
     public Post(){}
 
+    @Builder
     public Post (String title, String content) {
         this.title = title;
         this.content = content;

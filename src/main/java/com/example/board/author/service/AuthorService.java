@@ -33,13 +33,8 @@ public class AuthorService {
                 .name(req.getName())
                 .email(req.getEmail())
                 .password(req.getPassword())
+                .role(role)
                 .build();
-
-//      Author author = new Author(
-//                        req.getName(),
-//                        req.getEmail(),
-//                        req.getPassword(),
-//                        role));
 
         return repository.save(author);
 
