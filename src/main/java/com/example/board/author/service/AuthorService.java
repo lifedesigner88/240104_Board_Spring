@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,12 +76,15 @@ public class AuthorService {
     }
 
 //    Update
+    @Transactional
     public AuthorDetailResDto update (Long id, AuthorUpdateReqDto dto){
         Author author = findById(id);
         author.authorUpdate(
                 dto.getName(),
                 dto.getPassword());
-        return makeResDto(repository.save(author));
+        return makeResDto(author);
+//        객체에 변경이 감지(dirtychecking)되면 트랜잭션이 완료되는 시점에 save 동작
+//        트렌젝셔널 입력해야 한다. (메서드 종료 = 트렌잭션 완료)
     }
 
 //    Delete
