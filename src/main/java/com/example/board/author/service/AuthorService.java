@@ -29,12 +29,26 @@ public class AuthorService {
         if (reqRole == null || reqRole.equals("admin")) role = Role.ADMIN;
         else role = Role.USER;
 
+
+//        cascade.persist 테스트
+//        부모테이블을 통해 자식테이블에 객체를 동시에 생성.
+
         Author author = Author.builder()
                 .name(req.getName())
                 .email(req.getEmail())
                 .password(req.getPassword())
                 .role(role)
                 .build();
+
+//        Post post = Post.builder()
+//                .title("안녕하세요" + author.getName() + "입니다")
+//                .content("qksrkqtmqslek. cascade 테스트 입니다.")
+//                .author(author)
+//                .build();
+//
+//        List<Post> posts = new ArrayList<>();
+//        posts.add(post);
+//        author.setPosts(posts);
 
         return repository.save(author);
 
@@ -48,7 +62,8 @@ public class AuthorService {
                     new AuthorListResDto(
                             author.getId(),
                             author.getName(),
-                            author.getEmail()));
+                            author.getEmail()
+                    ));
         return dtoList;
     }
 
@@ -59,7 +74,7 @@ public class AuthorService {
 //    Update
     public AuthorDetailResDto update (Long id, AuthorUpdateReqDto dto){
         Author author = findById(id);
-        author.updateAuthor(
+        author.authorUpdate(
                 dto.getName(),
                 dto.getPassword());
         return makeResDto(repository.save(author));

@@ -1,5 +1,6 @@
 package com.example.board.post.domain;
 
+import com.example.board.author.domain.Author;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,6 +26,12 @@ public class Post {
     @Column(length = 3000, nullable = false)
     private String content;
 
+//  @JoinColumn(nullable = false, name="author_email", referencedColumnName = "email")
+    @ManyToOne
+    @JoinColumn // 설정 없으면 pk에 걸린다.
+    private Author author;
+
+//    Time
     @Setter
     @CreationTimestamp
     private LocalDateTime createdTime;
@@ -36,9 +43,11 @@ public class Post {
     public Post(){}
 
     @Builder
-    public Post (String title, String content) {
+    public Post (String title, String content, Author author) {
         this.title = title;
         this.content = content;
+        this.author = author;
+//        this.author.getPosts().add(this);
     }
 
     public void postUpdate (String title, String content) {

@@ -1,5 +1,6 @@
 package com.example.board.post.service;
 
+import com.example.board.author.domain.Author;
 import com.example.board.post.domain.Post;
 import com.example.board.post.dto.PostCreateReqDto;
 import com.example.board.post.dto.PostDetailResDto;
@@ -8,6 +9,7 @@ import com.example.board.post.dto.PostUpdateReqDto;
 import com.example.board.post.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -32,11 +34,15 @@ public class PostService {
 //    Read
     public List<PostListResDto> getAllPosts() {
         List<PostListResDto> dtoList = new ArrayList<>();
-        for (Post post : repository.findAll())
+        for (Post post : repository.findAll()){
+            Author author = post.getAuthor();
+            String email = author == null ? "익명" : author.getEmail();
             dtoList.add(
                     new PostListResDto(
                             post.getId(),
-                            post.getTitle()));
+                            post.getTitle(),
+                            email));
+            }
         return dtoList;
     }
 
@@ -68,6 +74,7 @@ public class PostService {
                 p.getId(),
                 p.getTitle(),
                 p.getContent(),
-                p.getCreatedTime());
+                p.getCreatedTime()
+        );
     }
 }
