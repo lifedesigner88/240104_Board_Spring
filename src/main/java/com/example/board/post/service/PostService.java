@@ -47,9 +47,12 @@ public class PostService {
         return getAllPostbyQuiry(postRepo.findAllJoin());
     }
 
-
     public List<PostListResDto> getAllPostsFetch() {
         return getAllPostbyQuiry(postRepo.findAllFetchJoin());
+    }
+
+    public List<PostListResDto> getAllByOrderBy() {
+        return getAllPostbyQuiry(postRepo.findAllByOrderByCreatedTimeDesc());
     }
 
 
