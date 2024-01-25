@@ -42,19 +42,17 @@ public class PostService {
 //    Read
 
 
-
     public List<PostListResDto> getAllPostsJoin() {
-        return getAllPostbyQuiry(postRepo.findAllJoin());
+        return getAllPostbyQuery(postRepo.findAllJoin());
     }
 
     public List<PostListResDto> getAllPostsFetch() {
-        return getAllPostbyQuiry(postRepo.findAllFetchJoin());
+        return getAllPostbyQuery(postRepo.findAllFetchJoin());
     }
 
     public List<PostListResDto> getAllByOrderBy() {
-        return getAllPostbyQuiry(postRepo.findAllByOrderByCreatedTimeDesc());
+        return getAllPostbyQuery(postRepo.findAllByOrderByCreatedTimeDesc());
     }
-
 
 
     public PostDetailResDto getPostDetail(Long id) {
@@ -76,7 +74,7 @@ public class PostService {
 
     /* ECT */
 
-    public List<PostListResDto> getAllPostbyQuiry (List<Post> list){
+    public List<PostListResDto> getAllPostbyQuery (List<Post> list){
         List<PostListResDto> dtoList = new ArrayList<>();
         for (Post post : list) {
             Author author = post.getAuthor();

@@ -97,6 +97,5 @@ public class AuthorServiceTest {
 //        검증
         assertEquals(authors.size(), Service.findAll().size());
 
-
     }
 }

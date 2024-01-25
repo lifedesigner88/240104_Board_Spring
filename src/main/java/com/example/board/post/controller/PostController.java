@@ -52,6 +52,10 @@ public class PostController {
         return "post/post-list";
     }
 
+
+
+
+
     @GetMapping("detail/{id}")
     public String getPostDetail(@PathVariable Long id, Model model) {
         model.addAttribute("post", service.getPostDetail(id));

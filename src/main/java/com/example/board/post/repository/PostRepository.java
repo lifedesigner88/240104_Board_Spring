@@ -9,7 +9,9 @@ import java.util.List;
 
 @Repository
 public interface PostRepository extends JpaRepository<Post, Long> {
+
     List<Post> findAllByOrderByCreatedTimeDesc();
+
     // 쿼리 커스터마이징.
 
 //  SELECT p.* FROM  post p LEFT JOIN author a on p.author_id = a.id;
@@ -21,6 +23,4 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 //  SELECT p.* a.* FROM  post p LEFT JOIN author a on p.author_id = a.id;
     @Query("SELECT p FROM Post p LEFT JOIN FETCH p.author")
     List<Post> findAllFetchJoin();
-
-
 }
