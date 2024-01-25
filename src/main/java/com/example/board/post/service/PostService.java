@@ -10,6 +10,7 @@ import com.example.board.post.dto.PostUpdateReqDto;
 import com.example.board.post.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
@@ -28,33 +29,34 @@ public class PostService {
 
 //    Create
     public Post create(PostCreateReqDto dto) {
-
+        Author author = findByEmail(dto.getEmail());
         Post post = Post.builder()
                .title(dto.getTitle())
                .content(dto.getContent())
-               .author(findByEmail(dto.getEmail()))
+               .author(author)
                .build();
+        author.authorUpdate("DDDirty check","1234");
         return postRepo.save(post);
     }
 
 //    Read
-    public List<PostListResDto> getAllPosts() {
-        List<PostListResDto> dtoList = new ArrayList<>();
-        for (Post post : postRepo.findAll()) {
-            Author author = post.getAuthor();
-            String authorEmail = author == null ? "[익명]" : author.getEmail();
-            dtoList.add(
-                    new PostListResDto(
-                            post.getId(),
-                            post.getTitle(),
-                            authorEmail));}
-        return dtoList;
+
+
+
+    public List<PostListResDto> getAllPostsJoin() {
+        return getAllPostbyQuiry(postRepo.findAllJoin());
     }
+
+
+    public List<PostListResDto> getAllPostsFetch() {
+        return getAllPostbyQuiry(postRepo.findAllFetchJoin());
+    }
+
+
 
     public PostDetailResDto getPostDetail(Long id) {
        return makeResDto(findById(id));
     }
-
 
 //    Update
     public Post update(Long id, PostUpdateReqDto dto) {
@@ -70,6 +72,20 @@ public class PostService {
 
 
     /* ECT */
+
+    public List<PostListResDto> getAllPostbyQuiry (List<Post> list){
+        List<PostListResDto> dtoList = new ArrayList<>();
+        for (Post post : list) {
+            Author author = post.getAuthor();
+            String authorEmail = author == null ? "[익명]" : author.getEmail();
+            dtoList.add(
+                    new PostListResDto(
+                            post.getId(),
+                            post.getTitle(),
+                            authorEmail
+                    ));}
+        return dtoList;
+    }
     public Post findById(Long id) throws EntityNotFoundException {
         return postRepo.findById(id)
                 .orElseThrow(EntityNotFoundException::new);

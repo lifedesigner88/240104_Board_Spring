@@ -111,7 +111,6 @@ public class AuthorService {
                             null
                     ));
 
-
         return new AuthorDetailResDto(
                 a.getId(),
                 a.getName(),

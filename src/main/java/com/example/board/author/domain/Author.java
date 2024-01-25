@@ -36,6 +36,7 @@ public class Author {
 
 //    mappedBy에 연관계의 주인을 명시하고, fk를 관리하는 변수명을 명시
 //    @Setter   // cascade.persist를 위한 테스트
+//    @OnetoOne  1:1 관계인 경우
     @Setter
     @OneToMany(mappedBy ="author", cascade = CascadeType.ALL)
     private List<Post> posts;

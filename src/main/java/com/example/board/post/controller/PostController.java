@@ -34,9 +34,15 @@ public class PostController {
     }
 
 //    Read
-    @GetMapping("list")
-    public String getAllPosts(Model model) {
-        model.addAttribute("posts", service.getAllPosts());
+    @GetMapping("list/join")
+    public String getAllPostsJoin(Model model) {
+        model.addAttribute("posts", service.getAllPostsJoin());
+        return "post/post-list";
+    }
+
+    @GetMapping("list/fetch")
+    public String getAllPostsFetch(Model model) {
+        model.addAttribute("posts", service.getAllPostsFetch());
         return "post/post-list";
     }
 

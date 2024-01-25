@@ -10,10 +10,7 @@ import com.example.board.post.dto.PostListResDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -70,4 +67,17 @@ public class AuthorController {
         return "redirect:/author/list";
     }
 
+
+//    순환참조 이슈 테스트
+    @GetMapping("/author/{id}/circle/entity")
+    @ResponseBody
+    public Author circleIssueTest1(@PathVariable Long id){
+        return service.findById(id);
+    }
+
+    @GetMapping("/author/{id}/circle/dto")
+    @ResponseBody
+    public AuthorDetailResDto circleIssueTest2(@PathVariable Long id){
+        return service.findDetailById(id);
+    }
 }
