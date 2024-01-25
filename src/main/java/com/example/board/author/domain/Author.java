@@ -53,11 +53,12 @@ public class Author {
     public Author() {}
 
     @Builder
-    public Author(String name, String email, String password, Role role) {
+    public Author(String name, String email, String password, Role role, List<Post> posts) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.role = role;
+        this.posts = posts;
     }
 
     public void authorUpdate(String name, String password) {

@@ -69,13 +69,13 @@ public class AuthorController {
 
 
 //    순환참조 이슈 테스트
-    @GetMapping("/author/{id}/circle/entity")
+    @GetMapping("{id}/circle/entity")
     @ResponseBody
     public Author circleIssueTest1(@PathVariable Long id){
         return service.findById(id);
     }
 
-    @GetMapping("/author/{id}/circle/dto")
+    @GetMapping("{id}/circle/dto")
     @ResponseBody
     public AuthorDetailResDto circleIssueTest2(@PathVariable Long id){
         return service.findDetailById(id);

@@ -10,15 +10,20 @@ import com.example.board.author.domain.Author;
 import com.example.board.author.domain.Role;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import javax.transaction.Transactional;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-// @DataJpaTest
- @SpringBootTest
- @Transactional
+
+
+
+
+ @DataJpaTest   // 마리아 DB 이용하려면 NONE 으로 설정.
+ @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+
+// @SpringBootTest
+// @Transactional
 public class AuthorRepositoryTest {
 
     @Autowired
@@ -29,22 +34,11 @@ public class AuthorRepositoryTest {
 
 
 //      준비 (Given) 데이터
-        String name = "testName";
-        String email = "testEmail";
-        String password = "test1234";
-        Role role = Role.USER;
-
         String builderName = "builderName";
         String builderEmail = "builder";
         String builderPassword = "1234";
         Role builderRole = Role.ADMIN;
 
-        Author author1 = new Author(
-                name,
-                email,
-                password,
-                role
-        );
 
         Author author2 = Author.builder()
                 .name(builderName)
@@ -54,17 +48,11 @@ public class AuthorRepositoryTest {
                 .build();
 
 //        실행 (Excute,When)
-        authorRepository.save(author1);
+
         authorRepository.save(author2);
 
 
 //        검증 (Then)
-        Author author1Test = authorRepository.findByEmail(email).orElse(null);
-        assert author1Test != null;
-        assertEquals(name, author1Test.getName());
-        assertEquals(email, author1Test.getEmail());
-        assertEquals(password, author1Test.getPassword());
-        assertEquals(role, author1Test.getRole());
 
         Author author2test = authorRepository.findByEmail(builderEmail).orElse(null);
         assert author2test != null;
