@@ -45,8 +45,6 @@ public class PostService {
                 throw new IllegalArgumentException("Appointment time cannot be in the past");
             appointment = "Y";
         }
-
-
         Post post = Post.builder()
                .title(dto.getTitle())
                .content(dto.getContent())

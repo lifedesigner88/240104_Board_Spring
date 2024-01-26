@@ -37,5 +37,17 @@
         </form>
     </div>
 
+    <div th:if = "${errorMessage != null}">
+        <p class="hidden" id="error" th:value="${errorMessage}"></p>
+    </div>
+
+<script>
+    let errorMessage = document.getElementById("error").value;
+    if (errorMessage) {
+        alert(errorMessage);
+    }
+</script>
+
 </body>
 </html>
+

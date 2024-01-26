@@ -16,6 +16,7 @@ import javax.persistence.EntityNotFoundException;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AuthorService {
@@ -26,12 +27,16 @@ public class AuthorService {
     }
 
 //    Create
-    public Author save(AuthorSaveReqDto req){
+    public Author save(AuthorSaveReqDto req) throws IllegalArgumentException {
         Role role;
         String reqRole = req.getRole();
         if (reqRole == null || reqRole.equals("admin")) role = Role.ADMIN;
         else role = Role.USER;
 
+        Optional<Author> optionalAuthor = repository.findByEmail(req.getEmail());
+        if (optionalAuthor.isPresent()) {
+            throw new IllegalArgumentException("Email already exists");
+        }
 
 //        cascade.persist 테스트
 //        부모테이블을 통해 자식테이블에 객체를 동시에 생성.

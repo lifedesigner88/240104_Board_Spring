@@ -32,10 +32,14 @@ public class PostController {
     }
 
     @PostMapping("create")
-    public String createPost(PostCreateReqDto dto) {
-        Post post = service.create(dto);
-        System.out.println(dto);
-        return "redirect:/post/detail/" + post.getId();
+    public String createPost(PostCreateReqDto dto, Model model) {
+        try {
+            Post post = service.create(dto);
+            return "redirect:/post/detail/" + post.getId();
+        } catch (Exception e) {
+            model.addAttribute("errorMessage", e.getMessage());
+            return "post/post-create";
+        }
     }
 
 
