@@ -7,6 +7,8 @@ import com.example.board.post.dto.PostUpdateReqDto;
 import com.example.board.post.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -35,6 +37,10 @@ public class PostController {
         return "redirect:/post/detail/" + post.getId();
     }
 
+
+
+
+
 //    Read
     @GetMapping("list/join")
     public String getAllPostsJoin(Model model) {
@@ -42,11 +48,15 @@ public class PostController {
         return "post/post-list";
     }
 
+
+
     @GetMapping("list/fetch")
     public String getAllPostsFetch(Model model) {
         model.addAttribute("posts", service.getAllPostsFetch());
         return "post/post-list";
     }
+
+
 
     @GetMapping("list/orderBy")
     public String getAllByOrderByCreatedTimeDesc(Model model) {
@@ -54,12 +64,28 @@ public class PostController {
         return "post/post-list";
     }
 
+
+
+    @GetMapping("list/page")
+    public String getAllPostsFetch(Model model,
+                                   @PageableDefault(size=10, sort="createdTime",
+                                   direction = Sort.Direction.DESC)
+                                   Pageable pageable) {
+        model.addAttribute("posts", service.getPostPageJason(pageable));
+        return "post/post-page-list";
+    }
+
+
+
+
     @GetMapping("list/page/jason")
     @ResponseBody
     public Page<PostListResDto> postPageJason(Pageable pageable) {
         Page<PostListResDto> dtos = service.getPostPageJason(pageable);
         return dtos;
     }
+
+
 
     @GetMapping("detail/{id}")
     public String getPostDetail(@PathVariable Long id, Model model) {

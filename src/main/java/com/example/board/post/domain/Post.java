@@ -39,6 +39,15 @@ public class Post {
     @UpdateTimestamp
     private LocalDateTime updatedTime;
 
+
+    private String appointment;
+    private LocalDateTime appointmentTime;
+    public void setAppointment(String appointment, LocalDateTime appointmentTime) {
+        this.appointment = appointment;
+        this.appointmentTime = appointmentTime;
+    }
+
+
     public Post(){}
 
     @Builder
