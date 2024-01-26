@@ -34,10 +34,9 @@ public class PostController {
     @PostMapping("create")
     public String createPost(PostCreateReqDto dto) {
         Post post = service.create(dto);
+        System.out.println(dto);
         return "redirect:/post/detail/" + post.getId();
     }
-
-
 
 
 
@@ -48,23 +47,17 @@ public class PostController {
         return "post/post-list";
     }
 
-
-
     @GetMapping("list/fetch")
     public String getAllPostsFetch(Model model) {
         model.addAttribute("posts", service.getAllPostsFetch());
         return "post/post-list";
     }
 
-
-
     @GetMapping("list/orderBy")
     public String getAllByOrderByCreatedTimeDesc(Model model) {
         model.addAttribute("posts", service.getAllByOrderBy());
         return "post/post-list";
     }
-
-
 
     @GetMapping("list/page")
     public String getAllPostsFetch(Model model,
@@ -75,7 +68,14 @@ public class PostController {
         return "post/post-page-list";
     }
 
-
+    @GetMapping("list/notAppo")
+    public String getAllPostNot(Model model,
+                                   @PageableDefault(size=10, sort="createdTime",
+                                           direction = Sort.Direction.DESC)
+                                   Pageable pageable) {
+        model.addAttribute("posts", service.getAllPostNot(pageable));
+        return "post/post-page-list";
+    }
 
 
     @GetMapping("list/page/jason")
@@ -84,7 +84,6 @@ public class PostController {
         Page<PostListResDto> dtos = service.getPostPageJason(pageable);
         return dtos;
     }
-
 
 
     @GetMapping("detail/{id}")

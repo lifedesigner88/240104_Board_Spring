@@ -17,6 +17,8 @@ public interface PostRepository extends JpaRepository<Post, Long> {
 //    Page : List<Post> + 해당 page의 각종 정보
     Page<Post> findAll(Pageable pageable);
 
+    Page<Post> findByAppointment(String appointment, Pageable pageable);
+
     List<Post> findAllByOrderByCreatedTimeDesc();
 
     // 쿼리 커스터마이징.

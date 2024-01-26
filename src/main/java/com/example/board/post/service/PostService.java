@@ -14,6 +14,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,12 +34,27 @@ public class PostService {
 //    Create
     public Post create(PostCreateReqDto dto) {
         Author author = findByEmail(dto.getEmail());
+        String appointment = null;
+        LocalDateTime dataTime = null;
+
+        if(dto.getAppointment().equals("Y") && !dto.getAppointmentTime().isEmpty()) {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyy-MM-dd'T'HH:mm");
+            dataTime = LocalDateTime.parse(dto.getAppointmentTime(), formatter);
+            LocalDateTime now = LocalDateTime.now();
+            if (dataTime.isBefore(now))
+                throw new IllegalArgumentException("Appointment time cannot be in the past");
+            appointment = "Y";
+        }
+
+
         Post post = Post.builder()
                .title(dto.getTitle())
                .content(dto.getContent())
                .author(author)
                .build();
-        author.authorUpdate("DDDirty check","1234");
+        post.setAppointment(appointment,dataTime);
+//        author.authorUpdate("DDDirty check","1234");
+
         return postRepo.save(post);
     }
 
@@ -72,6 +89,12 @@ public class PostService {
         return postRepo
                 .findAll(pageable)
                 .map(this::makeResDtoForList);
+    }
+    public Page<PostListResDto> getAllPostNot(Pageable pageable) {
+        return postRepo
+                .findByAppointment(null, pageable)
+                .map(this::makeResDtoForList);
+
     }
 
 //    Etc
