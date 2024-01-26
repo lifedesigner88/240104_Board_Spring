@@ -2,15 +2,17 @@ package com.example.board.post.controller;
 
 import com.example.board.post.domain.Post;
 import com.example.board.post.dto.PostCreateReqDto;
+import com.example.board.post.dto.PostListResDto;
 import com.example.board.post.dto.PostUpdateReqDto;
 import com.example.board.post.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.data.domain.Pageable;
+
+
 
 @Controller
 @RequestMapping("post")
@@ -52,9 +54,12 @@ public class PostController {
         return "post/post-list";
     }
 
-
-
-
+    @GetMapping("list/page/jason")
+    @ResponseBody
+    public Page<PostListResDto> postPageJason(Pageable pageable) {
+        Page<PostListResDto> dtos = service.getPostPageJason(pageable);
+        return dtos;
+    }
 
     @GetMapping("detail/{id}")
     public String getPostDetail(@PathVariable Long id, Model model) {

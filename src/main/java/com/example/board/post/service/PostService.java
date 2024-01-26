@@ -9,6 +9,8 @@ import com.example.board.post.dto.PostListResDto;
 import com.example.board.post.dto.PostUpdateReqDto;
 import com.example.board.post.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
@@ -40,23 +42,17 @@ public class PostService {
     }
 
 //    Read
-
-
     public List<PostListResDto> getAllPostsJoin() {
-        return getAllPostbyQuery(postRepo.findAllJoin());
+        return getAllPostbyCustom(postRepo.findAllJoin());
     }
-
     public List<PostListResDto> getAllPostsFetch() {
-        return getAllPostbyQuery(postRepo.findAllFetchJoin());
+        return getAllPostbyCustom(postRepo.findAllFetchJoin());
     }
-
     public List<PostListResDto> getAllByOrderBy() {
-        return getAllPostbyQuery(postRepo.findAllByOrderByCreatedTimeDesc());
+        return getAllPostbyCustom(postRepo.findAllByOrderByCreatedTimeDesc());
     }
-
-
     public PostDetailResDto getPostDetail(Long id) {
-       return makeResDto(findById(id));
+       return makeResDtoForDetail(findById(id));
     }
 
 //    Update
@@ -71,22 +67,14 @@ public class PostService {
 //    Delete
     public void deletePost(Long id) {postRepo.deleteById(id);}
 
-
-    /* ECT */
-
-    public List<PostListResDto> getAllPostbyQuery (List<Post> list){
-        List<PostListResDto> dtoList = new ArrayList<>();
-        for (Post post : list) {
-            Author author = post.getAuthor();
-            String authorEmail = author == null ? "[익명]" : author.getEmail();
-            dtoList.add(
-                    new PostListResDto(
-                            post.getId(),
-                            post.getTitle(),
-                            authorEmail
-                    ));}
-        return dtoList;
+//    Page
+    public Page<PostListResDto> getPostPageJason(Pageable pageable){
+        return postRepo
+                .findAll(pageable)
+                .map(this::makeResDtoForList);
     }
+
+//    Etc
     public Post findById(Long id) throws EntityNotFoundException {
         return postRepo.findById(id)
                 .orElseThrow(EntityNotFoundException::new);
@@ -95,8 +83,16 @@ public class PostService {
         return authorRepo.findByEmail(email)
                 .orElse(null);
     }
-
-    public PostDetailResDto makeResDto (Post p){
+    public PostListResDto makeResDtoForList (Post p){
+        Author author = p.getAuthor();
+        String authorEmail = author == null ? "[익명]" : author.getEmail();
+        return new PostListResDto(
+                p.getId(),
+                p.getTitle(),
+                authorEmail
+        );
+    }
+    public PostDetailResDto makeResDtoForDetail (Post p){
         Author author = p.getAuthor();
         String authorEmail = author == null ? "[익명]" : author.getEmail();
         String authorName = author == null ? "[익명]" : author.getName();
@@ -109,4 +105,10 @@ public class PostService {
                 authorName
         );
     }
+    public List<PostListResDto> getAllPostbyCustom (List<Post> list){
+        List<PostListResDto> dtoList = new ArrayList<>();
+        for (Post post : list) dtoList.add(makeResDtoForList(post));
+        return dtoList;
+    }
+
 }
