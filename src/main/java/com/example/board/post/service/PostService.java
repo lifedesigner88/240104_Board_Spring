@@ -92,7 +92,6 @@ public class PostService {
         return postRepo
                 .findByAppointment(null, pageable)
                 .map(this::makeResDtoForList);
-
     }
 
 //    Etc

@@ -72,6 +72,14 @@ public class PostController {
         return "post/post-page-list";
     }
 
+
+    @GetMapping("list/page/jason")
+    @ResponseBody
+    public Page<PostListResDto> postPageJason(Pageable pageable) {
+        Page<PostListResDto> dtos = service.getPostPageJason(pageable);
+        return dtos;
+    }
+
     @GetMapping("list/notAppo")
     public String getAllPostNot(Model model,
                                    @PageableDefault(size=10, sort="createdTime",
@@ -81,13 +89,6 @@ public class PostController {
         return "post/post-page-list";
     }
 
-
-    @GetMapping("list/page/jason")
-    @ResponseBody
-    public Page<PostListResDto> postPageJason(Pageable pageable) {
-        Page<PostListResDto> dtos = service.getPostPageJason(pageable);
-        return dtos;
-    }
 
 
     @GetMapping("detail/{id}")
