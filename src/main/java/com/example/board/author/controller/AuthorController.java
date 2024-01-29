@@ -7,6 +7,7 @@ import com.example.board.author.dto.AuthorSaveReqDto;
 import com.example.board.author.dto.AuthorUpdateReqDto;
 import com.example.board.author.service.AuthorService;
 import com.example.board.post.dto.PostListResDto;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @Controller
 @RequestMapping("author")
 public class AuthorController {
@@ -37,6 +39,7 @@ public class AuthorController {
             return "redirect:/author/detail/" + author.getId();
         } catch (IllegalArgumentException e) {
             model.addAttribute("errorMessage", e.getMessage());
+            log.error(e.getMessage());
             return "author/author-create";
         }
     }

@@ -1,0 +1,199 @@
+2024-01-29 12:22 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 12:22 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-29 12:22 o.s.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2024-01-29 12:22 c.e.b.a.controller.LogTestController-인포 로그입니다.
+2024-01-29 14:11 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:11 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-29 14:11 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-29 14:11 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 7436 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-29 14:11 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-29 14:11 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 14:11 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-01-29 14:11 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2024-01-29 14:11 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:11 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-29 14:11 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 14:11 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-29 14:11 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 993 ms
+2024-01-29 14:11 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 14:11 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 14:11 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 14:11 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-29 14:11 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-29 14:11 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 14:11 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 14:11 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:11 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 14:11 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:11 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 14:11 com.example.board.Application-Started Application in 3.162 seconds (JVM running for 3.761)
+2024-01-29 14:11 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 14:11 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-29 14:11 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-29 14:40 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-29 14:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-29 14:40 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 15600 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-29 14:40 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-29 14:40 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 14:40 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2024-01-29 14:40 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2024-01-29 14:40 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:40 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-29 14:40 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 14:40 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-29 14:40 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1186 ms
+2024-01-29 14:40 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 14:40 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 14:40 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 14:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-29 14:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-29 14:40 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 14:40 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 14:40 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:40 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 14:40 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:40 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 14:40 com.example.board.Application-Started Application in 3.6 seconds (JVM running for 4.134)
+2024-01-29 14:40 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 14:40 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-29 14:40 o.s.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2024-01-29 14:40 c.example.board.common.AopLogService-request methodString com.example.board.HomeController.home()
+2024-01-29 14:40 c.example.board.common.AopLogService-Before executing controller method
+2024-01-29 14:40 c.example.board.common.AopLogService-After executing controller method
+2024-01-29 14:40 c.example.board.common.AopLogService-request methodString com.example.board.HomeController.home()
+2024-01-29 14:40 c.example.board.common.AopLogService-Before executing controller method
+2024-01-29 14:40 c.example.board.common.AopLogService-After executing controller method
+2024-01-29 14:41 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:41 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-29 14:41 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-29 14:41 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 14392 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-29 14:41 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-29 14:41 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 14:41 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-01-29 14:41 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2024-01-29 14:41 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:41 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-29 14:41 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 14:41 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-29 14:41 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1177 ms
+2024-01-29 14:41 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 14:41 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 14:41 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 14:41 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-29 14:41 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-29 14:41 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 14:41 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 14:41 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:41 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 14:41 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:41 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 14:41 com.example.board.Application-Started Application in 3.677 seconds (JVM running for 4.226)
+2024-01-29 14:41 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 14:41 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-29 14:41 o.s.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2024-01-29 14:41 c.example.board.common.AopLogService-request methodString com.example.board.HomeController.home()
+2024-01-29 14:41 c.example.board.common.AopLogService-** Before executing controller method
+2024-01-29 14:41 c.example.board.common.AopLogService-** After executing controller method
+2024-01-29 14:42 c.example.board.common.AopLogService-request methodString com.example.board.post.controller.PostController.getAllByOrderByCreatedTimeDesc(Model)
+2024-01-29 14:42 c.example.board.common.AopLogService-** Before executing controller method
+2024-01-29 14:42 c.example.board.common.AopLogService-** After executing controller method
+2024-01-29 14:42 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:42 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-29 14:42 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-29 14:42 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 4516 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-29 14:42 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-29 14:42 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 14:42 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2024-01-29 14:42 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2024-01-29 14:42 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:42 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-29 14:42 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 14:42 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-29 14:42 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1129 ms
+2024-01-29 14:42 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 14:42 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 14:42 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 14:42 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-29 14:42 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-29 14:42 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 14:42 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 14:42 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:42 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 14:42 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:42 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 14:42 com.example.board.Application-Started Application in 3.534 seconds (JVM running for 4.061)
+2024-01-29 14:42 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 14:42 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-29 14:42 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-29 14:42 c.example.board.common.AopLogService-request methodString com.example.board.author.controller.AuthorController.getAllAuthors(Model)
+2024-01-29 14:42 c.example.board.common.AopLogService-[** Before executing controller method]
+2024-01-29 14:42 c.example.board.common.AopLogService-[** After executing controller method]
+2024-01-29 14:42 c.example.board.common.AopLogService-request methodString com.example.board.HomeController.home()
+2024-01-29 14:42 c.example.board.common.AopLogService-[** Before executing controller method]
+2024-01-29 14:42 c.example.board.common.AopLogService-[** After executing controller method]
+2024-01-29 14:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-29 14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-29 14:43 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 15948 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-29 14:43 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-29 14:43 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 14:43 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2024-01-29 14:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2024-01-29 14:43 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:43 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-29 14:43 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 14:43 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-29 14:43 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1147 ms
+2024-01-29 14:43 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 14:43 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 14:43 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-29 14:43 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-29 14:43 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 14:43 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 14:43 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:43 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 14:43 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:43 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 14:43 com.example.board.Application-Started Application in 3.652 seconds (JVM running for 4.204)
+2024-01-29 14:43 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 14:43 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-29 14:43 o.s.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2024-01-29 14:43 c.example.board.common.AopLogService-[ -- request methodString com.example.board.HomeController.home()
+2024-01-29 14:43 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-29 14:43 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-29 14:44 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:44 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-29 14:44 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-29 14:44 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 6664 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-29 14:44 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-29 14:44 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-29 14:44 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2024-01-29 14:44 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8080 (http)
+2024-01-29 14:44 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:44 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-29 14:44 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-29 14:44 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-29 14:44 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1188 ms
+2024-01-29 14:44 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-29 14:44 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-29 14:44 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-29 14:44 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-29 14:44 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-29 14:44 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-29 14:44 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-29 14:44 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:44 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-29 14:44 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8080"]
+2024-01-29 14:44 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-29 14:44 com.example.board.Application-Started Application in 3.767 seconds (JVM running for 4.266)
+2024-01-29 14:44 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-29 14:44 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-29 14:44 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-29 14:44 c.example.board.common.AopLogService-[ --  request methodString com.example.board.HomeController.home()
+2024-01-29 14:44 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-29 14:44 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-29 14:45 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-29 14:45 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-29 14:45 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
