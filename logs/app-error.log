@@ -127,3 +127,4 @@ Caused by: java.lang.IllegalArgumentException: ProceedingJoinPoint is only suppo
 2024-01-29 16:47:16 c.e.b.a.controller.LogTestController-**** Exception occurred: Author not found
 2024-01-29 16:47:52 c.example.board.common.AopLogService-Author not found
 2024-01-29 16:47:52 c.e.board.common.CommonException-Entity not found : Author not found
+2024-01-29 16:49:49 c.e.board.common.CommonException-Entity not found : Author not found

@@ -54,7 +54,7 @@ public class AopLogService {
         ServletRequestAttributes servletReq =
                 (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
         ObjectNode objectNode = getJsonNodes(joinPoint, servletReq);
-        log.info("Around 입니다." + objectNode.toString());
+        log.info("Around 입니다." + objectNode);
 
         try {
 //            본래의 컨트롤러 매서드 호출하는 부분.
