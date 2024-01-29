@@ -54,7 +54,7 @@ public class AuthorService {
 //                .author(author)
 //                .build();
 //
-//        List<Post> posts = new ArrayList<>();
+//        List<Post> posts = new ArrayList<>();z
 //        posts.add(post);
 //        author.setPosts(posts);
 

@@ -37,7 +37,6 @@ public class AuthorController {
             return "redirect:/author/detail/" + author.getId();
         } catch (IllegalArgumentException e) {
             model.addAttribute("errorMessage", e.getMessage());
-            System.out.println("1234");
             return "author/author-create";
         }
     }

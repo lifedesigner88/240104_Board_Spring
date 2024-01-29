@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<configuration>
+
+<!--    CONSOLE 로그 관련 설정 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm} %logger{36}-%msg%n </pattern>
+        </encoder>
+    </appender>
+
+
+
+<!--    정상로그 관련 설정-->
+    <appender name="FILE">
+
+    </appender>
+
+<!--    에러로그 관련 설정-->
+
+    <appender name="FILE">
+
+    </appender>
+
+
+
+<!--    정상로그 관련 설정-->
+
+    <!--    info 로그의 경우 정상 log 파일로 분리 -->
+    <root level="info">
+        <!--        console과 정상 log파일에 로그내용 추가 -->
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+    <logger level="error" name="ERROR_LOGGER">
+        <appender-ref ref="ERROR_FILE"/>
+    </logger>
+
+
+
+
+</configuration>
+
