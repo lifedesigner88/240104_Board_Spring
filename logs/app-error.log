@@ -114,3 +114,16 @@ Caused by: java.lang.IllegalArgumentException: ProceedingJoinPoint is only suppo
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
 	... 35 common frames omitted
+2024-01-29 16:28:13 c.example.board.common.AopLogService-Author not found
+2024-01-29 16:28:13 c.e.board.common.CommonException-Entity not foundAuthor not found
+2024-01-29 16:29:58 c.example.board.common.AopLogService-Author not found
+2024-01-29 16:29:58 c.e.board.common.CommonException-Entity not found : Author not found
+2024-01-29 16:31:40 c.e.b.a.controller.LogTestController-Exception occurred: Author not found
+2024-01-29 16:31:49 c.e.b.a.controller.LogTestController-Exception occurred: Author not found
+2024-01-29 16:32:51 c.e.b.a.controller.LogTestController-Exception occurred: Author not found
+2024-01-29 16:33:00 c.e.b.a.controller.LogTestController-Exception occurred: Author not found
+2024-01-29 16:46:12 c.e.b.a.controller.LogTestController-**** Exception occurred: Author not found
+2024-01-29 16:46:36 c.e.b.a.controller.LogTestController-**** Exception occurred: Author not found
+2024-01-29 16:47:16 c.e.b.a.controller.LogTestController-**** Exception occurred: Author not found
+2024-01-29 16:47:52 c.example.board.common.AopLogService-Author not found
+2024-01-29 16:47:52 c.e.board.common.CommonException-Entity not found : Author not found

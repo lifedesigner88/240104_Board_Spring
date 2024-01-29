@@ -76,7 +76,7 @@ public class AuthorService {
         return dtoList;
     }
 
-    public AuthorDetailResDto findDetailById(Long id) {
+    public AuthorDetailResDto findDetailById(Long id) throws EntityNotFoundException {
         return makeResDto(findById(id));
     }
 
@@ -98,7 +98,7 @@ public class AuthorService {
 
     /* ECT */
     public Author findById(Long id) throws EntityNotFoundException {
-        return repository.findById(id).orElseThrow(EntityNotFoundException::new);
+        return repository.findById(id).orElseThrow(() -> new EntityNotFoundException("Author not found"));
     }
 
     public AuthorDetailResDto makeResDto (Author a){

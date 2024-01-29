@@ -18,6 +18,9 @@ import java.util.Map;
 @Slf4j
 public class AopLogService {
 
+//    https://backtony.github.io/spring/2021-12-29-spring-aop-2/#%EC%95%A0%EB%85%B8%ED%85%8C%EC%9D%B4%EC%85%98-%EB%8F%99%EC%9E%91-%EC%88%9C%EC%84%9C 관련 링크
+
+
 //    @Pointcut(value = "execution(* com.example.board..controller..*.*(..))")
     @Pointcut("within(@org.springframework.stereotype.Controller *)")
     public void controllerPointCut(){
@@ -29,13 +32,10 @@ public class AopLogService {
     public void beforeController(JoinPoint joinPoint){
         log.info("[ --  Before executing controller method]");
 //        메서드가 실행되기 전에 인증, 입력값 겆읃응을 수행하는 용도로 사용하는 단계
-
         ServletRequestAttributes servletReq =
                 (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
         ObjectNode objectNode = getJsonNodes(joinPoint, servletReq);
         log.info(objectNode.toString());
-
-
     }
 
     @After("controllerPointCut()")
@@ -54,7 +54,7 @@ public class AopLogService {
         ServletRequestAttributes servletReq =
                 (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
         ObjectNode objectNode = getJsonNodes(joinPoint, servletReq);
-        log.info(objectNode.toString());
+        log.info("Around 입니다." + objectNode.toString());
 
         try {
 //            본래의 컨트롤러 매서드 호출하는 부분.

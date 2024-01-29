@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
 @Slf4j
@@ -53,7 +54,7 @@ public class AuthorController {
     }
 
     @GetMapping("detail/{id}")
-    public String authorDetail(@PathVariable Long id, Model model) {
+    public String authorDetail(@PathVariable Long id, Model model) throws EntityNotFoundException {
         AuthorDetailResDto author = service.findDetailById(id);
         List<PostListResDto> list = author.getPosts();
         model.addAttribute("author", author);
