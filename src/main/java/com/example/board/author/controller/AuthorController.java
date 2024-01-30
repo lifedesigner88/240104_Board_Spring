@@ -27,6 +27,13 @@ public class AuthorController {
     }
 
 
+//    Login
+    @GetMapping("login-page")
+    public String authorLogin() {
+        return "author/author-login";
+    }
+
+
 //    Create
     @GetMapping("create")
     public String authorCreate(){

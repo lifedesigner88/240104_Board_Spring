@@ -16,13 +16,34 @@ public class SecurityConfig {
         return httpSecurity
 //                csrf 보안공격에 대한 설정은 하지 않겠다라는 의미
                 .csrf().disable()
-////                특정 url대해서는 인증처리 하지 않고, 특정 url대해서는 인증처리 하겠다라는 설정.
+
+
+//                특정 url대해서는 인증처리 하지 않고, 특정 url대해서는 인증처리 하겠다라는 설정.
                 .authorizeRequests()
-////                  인증 미적용 url 패턴
-                    .antMatchers("/","/author/create", "/author/login" )
+//                  인증 미적용 url 패턴
+                    .antMatchers("/","/author/create", "/author/login-page" )
                         .permitAll()
                     .anyRequest().authenticated()
                 .and()
+
+
+
+//                .sessionManagement()                  // 만약에 세션방식을 사용하지 않으면 설정
+//                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .formLogin()
+                    .loginPage("/author/login-page")    // 이거 지우면 기본 스프링 폼이 나옴.
+                    .loginProcessingUrl("/doLogin")      // 스프링 내장 매서드를 사용하기위해 /doLogin url 사용
+                        .usernameParameter("email")
+                        .passwordParameter("pw")
+                    .defaultSuccessUrl("/author/list", true)
+
+                .and()
+
+                .logout()
+//                spring security의 doLogout기능 그대로 사용
+                    .logoutUrl("/doLogout")
+                .and()
+
                 .build();
 
     }
