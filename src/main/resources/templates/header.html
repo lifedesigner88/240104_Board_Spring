@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +15,25 @@
                 <a class="nav-link" href="/author/login-page" th:if="${session.email} == null">로그인</a></li>
             <li class="nav-item" >
                 <a class="nav-link" href="/author/create" th:if="${session.email} == null">회원가입</a></li>
-            <li class="nav-item">
+
+
+            <li class="nav-item" sec:authorize="hasRole('ADMIN')">
                 <a class="nav-link" href="/author/list" th:if="${session.email} != null">회원관리</a></li>
-            <li class="nav-item" >
+            <li class="nav-item" sec:authorize="hasRole('ADMIN')">
                 <a class="nav-link" href="/post/create" th:if="${session.email} != null">글쓰기</a></li>
-            <li class="nav-item" >
+
+
+            <li class="nav-item" sec:authorize="hasRole('USER')">
                 <a class="nav-link" href="/post/list/join" th:if="${session.email} != null">게시글목록 (Join)</a></li>
-            <li class="nav-item" >
+            <li class="nav-item" sec:authorize="hasRole('USER')">
                 <a class="nav-link" href="/post/list/fetch" th:if="${session.email} != null">(Fetch)</a></li>
-            <li class="nav-item" >
+            <li class="nav-item" sec:authorize="hasRole('USER')">
                 <a class="nav-link" href="/post/list/orderBy" th:if="${session.email} != null">(OrderBy)</a></li>
-            <li class="nav-item" >
+
+
+            <li class="nav-item" sec:authorize="hasRole('ADMIN')">
                 <a class="nav-link" href="/post/list/page" th:if="${session.email} != null">페이지</a></li>
-            <li class="nav-item" >
+            <li class="nav-item" sec:authorize="hasRole('ADMIN')">
                 <a class="nav-link" href="/post/list/notAppo" th:if="${session.email} != null">스케쥴</a></li>
 
 
