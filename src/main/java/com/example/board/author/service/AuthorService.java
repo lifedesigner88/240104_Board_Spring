@@ -10,6 +10,7 @@ import com.example.board.author.repository.AuthorRepository;
 import com.example.board.post.domain.Post;
 import com.example.board.post.dto.PostListResDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
@@ -22,8 +23,12 @@ import java.util.Optional;
 public class AuthorService {
 
     private final AuthorRepository repository;
-    public AuthorService(@Autowired AuthorRepository repository) {
+    private final PasswordEncoder encoder;
+
+    @Autowired
+    public AuthorService(AuthorRepository repository, PasswordEncoder encoder) {
         this.repository = repository;
+        this.encoder = encoder;
     }
 
 //    Create
@@ -44,7 +49,9 @@ public class AuthorService {
         Author author = Author.builder()
                 .name(req.getName())
                 .email(req.getEmail())
-                .password(req.getPassword())
+                .password(encoder.encode(req.getPassword()))
+
+//                .password(req.getPassword())
                 .role(role)
                 .build();
 
