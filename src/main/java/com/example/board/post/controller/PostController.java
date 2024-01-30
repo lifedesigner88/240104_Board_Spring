@@ -45,8 +45,6 @@ public class PostController {
         }
     }
 
-
-
 //    Read
     @GetMapping("list/join")
     public String getAllPostsJoin(Model model) {
@@ -75,7 +73,6 @@ public class PostController {
         return "post/post-page-list";
     }
 
-
     @GetMapping("list/page/jason")
     @ResponseBody
     public Page<PostListResDto> postPageJason(Pageable pageable) {
@@ -91,8 +88,6 @@ public class PostController {
         model.addAttribute("posts", service.getAllPostNot(pageable));
         return "post/post-page-list";
     }
-
-
 
     @GetMapping("detail/{id}")
     public String getPostDetail(@PathVariable Long id, Model model) {

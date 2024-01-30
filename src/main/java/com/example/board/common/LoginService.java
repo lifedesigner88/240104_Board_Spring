@@ -46,6 +46,14 @@ public class LoginService implements UserDetailsService {
 
 //        쿠키 : JSESSIONID	7BC8D956B977969ECC64B8228BA5BABE
 //        docker run -d -p 6379:6379 redis
+//        docker ps
+//        docker exec -it de9815859344 /bin/sh
+//        # redis-cli
+//        keys *
+
+
+
+
     }
 
 }
