@@ -9,6 +9,7 @@ import com.example.board.author.service.AuthorService;
 import com.example.board.post.dto.PostListResDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -53,6 +54,8 @@ public class AuthorController {
     }
 
 //    Read
+
+    @PreAuthorize(value = "hasRole('ADMIN')")
     @GetMapping("list")
     public String getAllAuthors(Model model) {
         List<AuthorListResDto> authors = service.findAll();

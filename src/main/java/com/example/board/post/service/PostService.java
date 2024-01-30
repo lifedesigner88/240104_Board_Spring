@@ -11,6 +11,7 @@ import com.example.board.post.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
@@ -32,10 +33,18 @@ public class PostService {
     }
 
 //    Create
-    public Post create(PostCreateReqDto dto) {
-        Author author = findByEmail(dto.getEmail());
+    public Post create(PostCreateReqDto dto, String email) {
+
+//        Authentication aut = SecurityContextHolder.getContext().getAuthentication();
+//        String email = aut.getName();        Authentication aut = SecurityContextHolder.getContext().getAuthentication();
+//        String email = aut.getName();
+        Author author = findByEmail(email);
+
+//        Author author = findByEmail(dto.getEmail());
         String appointment = null;
         LocalDateTime dataTime = null;
+
+
 
         if(dto.getAppointment().equals("Y") && !dto.getAppointmentTime().isEmpty()) {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyy-MM-dd'T'HH:mm");

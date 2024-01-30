@@ -2,6 +2,7 @@ package com.example.board.common;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
@@ -9,6 +10,9 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity   // 시큐리티 커스텀
 // WebSecurityConfigurerAdapter를 상속하는 방식은 deprecated(지원종료) 되었다.
+
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+// pre : 사전 , post : 사후,    사전 사후에 인증/권한 검사를 할수 있도록 해줌.
 public class SecurityConfig {
 
     @Bean
@@ -35,9 +39,10 @@ public class SecurityConfig {
                     .loginProcessingUrl("/doLogin")      // 스프링 내장 매서드를 사용하기위해 /doLogin url 사용
                         .usernameParameter("email")
                         .passwordParameter("pw")
-                    .defaultSuccessUrl("/author/list", true)
-
+//                    .defaultSuccessUrl("/author/list", true)
+                .successHandler(new LoginSuccessHandler())
                 .and()
+
 
                 .logout()
 //                spring security의 doLogout기능 그대로 사용

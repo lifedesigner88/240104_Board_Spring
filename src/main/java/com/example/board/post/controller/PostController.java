@@ -7,13 +7,14 @@ import com.example.board.post.dto.PostUpdateReqDto;
 import com.example.board.post.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.data.domain.Pageable;
 
+import javax.servlet.http.HttpSession;
 
 
 @Controller
@@ -32,9 +33,11 @@ public class PostController {
     }
 
     @PostMapping("create")
-    public String createPost(PostCreateReqDto dto, Model model) {
+    public String createPost(PostCreateReqDto dto, Model model, HttpSession session) {
         try {
-            Post post = service.create(dto);
+//            HttpServletRequest req 를 매개변수에 넣고
+//            HttpSession session =
+            Post post = service.create(dto, session.getAttribute("email").toString());
             return "redirect:/post/detail/" + post.getId();
         } catch (Exception e) {
             model.addAttribute("errorMessage", e.getMessage());

@@ -1595,3 +1595,1467 @@ This generated password is for development use only. Your security configuration
 2024-01-30 12:09 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-01-30 12:09 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
 2024-01-30 12:09 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 12:09 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 11756 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 12:09 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 12:09 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 12:09 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2024-01-30 12:09 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 12:09 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 12:09 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 12:09 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 12:09 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 12:09 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1224 ms
+2024-01-30 12:09 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 12:09 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 12:09 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 12:09 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 12:09 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 12:09 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 12:09 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 12:09 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 12:09 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2111d7b9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a023e34, org.springframework.security.web.context.SecurityContextPersistenceFilter@dc3eda6, org.springframework.security.web.header.HeaderWriterFilter@1be3a294, org.springframework.security.web.authentication.logout.LogoutFilter@1c24639e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3b8a063d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@215f8d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47d7e4b6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@260f05ee, org.springframework.security.web.session.SessionManagementFilter@36ce9eaf, org.springframework.security.web.access.ExceptionTranslationFilter@690e7b89, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@752e4223]
+2024-01-30 12:09 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 12:09 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 12:09 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 12:09 com.example.board.Application-Started Application in 3.938 seconds (JVM running for 4.454)
+2024-01-30 12:09 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 12:09 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 12:09 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 12:09 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:09 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:09 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:11 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:12 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:12 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:12 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:12 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:12 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:12 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:12 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:12 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:19 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:19 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:19 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:19 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:19 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:19 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:19 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:19 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:19 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"error":[""]}}
+2024-01-30 12:19 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:19 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"error":[""]}}
+2024-01-30 12:19 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:20 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:20 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:22 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:23 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:23 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:23 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:23 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:23 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:23 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:23 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:23 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:23 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:23 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:23 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:23 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:24 c.example.board.common.AopLogService-{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:24 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:25 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:25 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"error","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:27 c.example.board.common.AopLogService-{"Method Name":"error","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:27 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllByOrderByCreatedTimeDesc","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"getAllByOrderByCreatedTimeDesc","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsFetch","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"getAllPostsFetch","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 12:30 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 12:30 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:09 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:09 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 14:09 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 14:14 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 15848 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 14:14 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 14:14 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 14:14 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2024-01-30 14:14 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 14:14 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:14 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 14:14 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 14:14 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 14:14 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1264 ms
+2024-01-30 14:14 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 14:14 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 14:14 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 14:14 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 14:14 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 14:14 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 14:14 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 14:14 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:14 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2165d4ab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f9b851c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ac0fd1d, org.springframework.security.web.header.HeaderWriterFilter@73633230, org.springframework.security.web.authentication.logout.LogoutFilter@80b6098, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35975b05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c15a6aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d7c00de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a8ab98f, org.springframework.security.web.session.SessionManagementFilter@3b3b2290, org.springframework.security.web.access.ExceptionTranslationFilter@5039c2cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@be186df]
+2024-01-30 14:14 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 14:14 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:14 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 14:14 com.example.board.Application-Started Application in 4.063 seconds (JVM running for 4.577)
+2024-01-30 14:14 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 14:14 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 14:14 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorSave","CRUD Name":"POST","user inputs":{"name":[""],"email":[""],"password":[""],"role":["==선택=="]}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorSave","CRUD Name":"POST","user inputs":{"name":[""],"email":[""],"password":[""],"role":["==선택=="]}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"error","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"error","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"getAllPostsJoin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsFetch","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"getAllPostsFetch","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllByOrderByCreatedTimeDesc","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"getAllByOrderByCreatedTimeDesc","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostsFetch","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"getAllPostsFetch","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllPostNot","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"getAllPostNot","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:14 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 14:14 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:30 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:30 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 14:30 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 14:30 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 10536 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 14:30 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 14:30 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 14:30 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2024-01-30 14:30 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 14:30 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:30 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 14:30 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 14:30 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 14:30 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1204 ms
+2024-01-30 14:30 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 14:30 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 14:30 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 14:30 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 14:30 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 14:30 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 14:30 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 14:30 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:30 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@429dde4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@610d0067, org.springframework.security.web.context.SecurityContextPersistenceFilter@956cf3d, org.springframework.security.web.header.HeaderWriterFilter@34a99d8, org.springframework.security.web.authentication.logout.LogoutFilter@19d3f4fb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2148849f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e085259, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@217009bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ef48b08, org.springframework.security.web.session.SessionManagementFilter@2ba4b32b, org.springframework.security.web.access.ExceptionTranslationFilter@1372696b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f9b5f01]
+2024-01-30 14:30 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 14:30 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:30 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 14:30 com.example.board.Application-Started Application in 3.948 seconds (JVM running for 4.492)
+2024-01-30 14:31 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 14:31 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 14:31 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:31 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:31 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:31 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:31 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 14:31 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 14:31 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 6688 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 14:31 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 14:31 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 14:31 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 292 ms. Found 2 JPA repository interfaces.
+2024-01-30 14:32 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 14:32 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:32 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 14:32 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 14:32 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 14:32 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 10897 ms
+2024-01-30 14:32 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 14:32 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 14:32 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 14:32 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 14:32 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 14:32 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 14:32 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 14:32 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:32 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d836c4a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@485547ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@518b0c12, org.springframework.security.web.header.HeaderWriterFilter@4964d801, org.springframework.security.web.authentication.logout.LogoutFilter@6413eeb7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@470ad01c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33502cfe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36ce9eaf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d77d269, org.springframework.security.web.session.SessionManagementFilter@dd3e1e3, org.springframework.security.web.access.ExceptionTranslationFilter@5f01361e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@561c031]
+2024-01-30 14:32 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 14:32 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:32 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 14:32 com.example.board.Application-Started Application in 21.587 seconds (JVM running for 22.326)
+2024-01-30 14:32 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 14:32 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 14:32 o.s.web.servlet.DispatcherServlet-Completed initialization in 2 ms
+2024-01-30 14:32 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:32 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:32 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:32 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:32 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:32 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:32 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:32 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:32 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:32 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:32 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"logout":[""]}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:33 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:33 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:36 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:36 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 14:36 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 14:36 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 12120 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 14:36 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 14:36 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 14:36 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-01-30 14:36 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 14:36 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:36 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 14:36 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 14:36 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 14:36 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1265 ms
+2024-01-30 14:36 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 14:36 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 14:36 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 14:36 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 14:36 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 14:36 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 14:36 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 14:36 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:36 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3180131e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62376bdd, org.springframework.security.web.context.SecurityContextPersistenceFilter@231c521e, org.springframework.security.web.header.HeaderWriterFilter@414d466e, org.springframework.security.web.authentication.logout.LogoutFilter@1c15a6aa, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@752e4223, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f0b5619, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@702432cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b8a063d, org.springframework.security.web.session.SessionManagementFilter@4ef10d3b, org.springframework.security.web.access.ExceptionTranslationFilter@2487b621, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71c1ca1]
+2024-01-30 14:36 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 14:36 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:36 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 14:36 com.example.board.Application-Started Application in 3.907 seconds (JVM running for 4.444)
+2024-01-30 14:36 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 14:36 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 14:36 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 14:36 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:36 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:36 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:40 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 14:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 14:40 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 15984 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 14:40 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 14:40 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 14:40 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 35 ms. Found 2 JPA repository interfaces.
+2024-01-30 14:40 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 14:40 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:40 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 14:40 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 14:40 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 14:40 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1287 ms
+2024-01-30 14:40 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 14:40 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 14:40 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 14:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 14:40 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 14:40 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 14:40 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 14:40 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 14:40 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7cc7e441, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bb1b872, org.springframework.security.web.context.SecurityContextPersistenceFilter@689ea211, org.springframework.security.web.header.HeaderWriterFilter@2e096ac0, org.springframework.security.web.authentication.logout.LogoutFilter@38f3dbbf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2389f546, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22fe90df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@99f75e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64245ca9, org.springframework.security.web.session.SessionManagementFilter@54cce500, org.springframework.security.web.access.ExceptionTranslationFilter@712213ed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2111d7b9]
+2024-01-30 14:40 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 14:40 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 14:40 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 14:40 com.example.board.Application-Started Application in 4.221 seconds (JVM running for 4.926)
+2024-01-30 14:40 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 14:40 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 14:40 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 14:40 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 14:40 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 14:40 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:02 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:02 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:02 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 15072 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:02 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:02 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:02 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:02 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:02 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:02 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:02 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:02 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:02 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1255 ms
+2024-01-30 15:02 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:02 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:02 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:02 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:02 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:02 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:02 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:02 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:02 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@b1f36e5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52afcdd8, org.springframework.security.web.context.SecurityContextPersistenceFilter@729d1428, org.springframework.security.web.header.HeaderWriterFilter@2686a801, org.springframework.security.web.authentication.logout.LogoutFilter@5e085259, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3eb8057c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f27f354, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@dc3eda6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@397f925e, org.springframework.security.web.session.SessionManagementFilter@518b0c12, org.springframework.security.web.access.ExceptionTranslationFilter@4964d801, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15ca7322]
+2024-01-30 15:02 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:02 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:02 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:02 com.example.board.Application-Started Application in 3.951 seconds (JVM running for 4.568)
+2024-01-30 15:02 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:02 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:02 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:02 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:02 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:03 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:03 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:04 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:04 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:04 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:04 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 6808 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:04 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:04 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:04 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:04 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:04 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:04 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:04 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:04 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:04 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1335 ms
+2024-01-30 15:04 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:04 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:04 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:04 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:04 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:04 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:04 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:04 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:04 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@350d9d23, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@530a46f4, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d49fe37, org.springframework.security.web.header.HeaderWriterFilter@263f6e96, org.springframework.security.web.authentication.logout.LogoutFilter@58189132, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e590e36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1728d307, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6dc7b7f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3180131e, org.springframework.security.web.session.SessionManagementFilter@4f6a5cc9, org.springframework.security.web.access.ExceptionTranslationFilter@5003c114, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@619b7436]
+2024-01-30 15:04 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:04 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:04 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:04 com.example.board.Application-Started Application in 4.108 seconds (JVM running for 4.72)
+2024-01-30 15:04 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:04 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:04 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 15:04 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:04 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:04 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:04 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:04 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:04 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:04 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:04 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:05 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:05 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:05 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:05 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:07 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:07 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:07 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:07 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 7188 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:07 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:07 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:07 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:07 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:07 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:07 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:07 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:07 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:07 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1323 ms
+2024-01-30 15:07 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:07 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:07 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:07 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:07 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:07 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:07 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:07 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:07 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@38318d67, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3af6c672, org.springframework.security.web.context.SecurityContextPersistenceFilter@5003c114, org.springframework.security.web.header.HeaderWriterFilter@2dc77962, org.springframework.security.web.authentication.logout.LogoutFilter@206e5183, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7f7f544a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2caa9666, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2686a801, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12948e7a, org.springframework.security.web.session.SessionManagementFilter@112b3298, org.springframework.security.web.access.ExceptionTranslationFilter@7e35d743, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75f446df]
+2024-01-30 15:07 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:07 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:07 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:07 com.example.board.Application-Started Application in 4.079 seconds (JVM running for 4.83)
+2024-01-30 15:07 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:07 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:07 o.s.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2024-01-30 15:07 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:07 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:07 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:07 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:07 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:07 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:07 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:07 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:07 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:07 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:07 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:07 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:07 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:07 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:07 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:07 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:08 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:08 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 10284 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:08 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:08 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:08 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 47 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:08 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:08 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:08 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:08 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:08 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1182 ms
+2024-01-30 15:08 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:08 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:08 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:08 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:08 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:08 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:08 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:08 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@429dde4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@610d0067, org.springframework.security.web.context.SecurityContextPersistenceFilter@956cf3d, org.springframework.security.web.header.HeaderWriterFilter@34a99d8, org.springframework.security.web.authentication.logout.LogoutFilter@19d3f4fb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2148849f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e085259, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@217009bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ef48b08, org.springframework.security.web.session.SessionManagementFilter@2ba4b32b, org.springframework.security.web.access.ExceptionTranslationFilter@1372696b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f9b5f01]
+2024-01-30 15:08 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:08 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:08 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:08 com.example.board.Application-Started Application in 4.363 seconds (JVM running for 4.93)
+2024-01-30 15:10 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:10 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:10 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 15:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:10 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:10 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:10 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:10 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:10 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:10 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["Y"],"appointmentTime":[""],"title":["123"],"content":["123"],"email":["qwer"]}}
+2024-01-30 15:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:11 c.example.board.common.AopLogService-{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["Y"],"appointmentTime":[""],"title":["123"],"content":["123"],"email":["qwer"]}}
+2024-01-30 15:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:11 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:11 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:11 c.example.board.common.AopLogService-{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:11 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:15 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:15 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:16 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 12864 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:16 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:16 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:16 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:16 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:16 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:16 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:16 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:16 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:16 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1268 ms
+2024-01-30 15:16 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:16 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:16 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:16 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:16 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:16 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:16 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:16 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:16 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58b30e3e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5325674a, org.springframework.security.web.context.SecurityContextPersistenceFilter@61c4fc34, org.springframework.security.web.header.HeaderWriterFilter@623ed5ed, org.springframework.security.web.authentication.logout.LogoutFilter@64e247e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c3a1d7f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c678a1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b49b1df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a0aa5e2, org.springframework.security.web.session.SessionManagementFilter@744199bb, org.springframework.security.web.access.ExceptionTranslationFilter@21539796, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@350d9d23]
+2024-01-30 15:16 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:16 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:16 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:16 com.example.board.Application-Started Application in 3.931 seconds (JVM running for 4.453)
+2024-01-30 15:16 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:16 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:16 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 15:16 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["Y"],"appointmentTime":["2024-02-03T15:16"],"title":["aaa"],"content":["asdfasf"]}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["Y"],"appointmentTime":["2024-02-03T15:16"],"title":["aaa"],"content":["asdfasf"]}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:16 c.example.board.common.AopLogService-{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:16 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:22 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:22 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:22 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:22 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 9580 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:22 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:22 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:22 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:22 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:22 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:22 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:22 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:22 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:22 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1184 ms
+2024-01-30 15:22 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:22 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:22 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:22 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:22 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:22 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:22 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:22 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:22 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2165d4ab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f9b851c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ac0fd1d, org.springframework.security.web.header.HeaderWriterFilter@73633230, org.springframework.security.web.authentication.logout.LogoutFilter@80b6098, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35975b05, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c15a6aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d7c00de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a8ab98f, org.springframework.security.web.session.SessionManagementFilter@3b3b2290, org.springframework.security.web.access.ExceptionTranslationFilter@5039c2cf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@be186df]
+2024-01-30 15:22 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:22 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:22 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:22 com.example.board.Application-Started Application in 3.959 seconds (JVM running for 4.491)
+2024-01-30 15:22 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:22 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:22 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 15:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"error":[""]}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{"error":[""]}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["N"],"appointmentTime":[""],"title":["qq"],"content":["qqe"]}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["N"],"appointmentTime":[""],"title":["qq"],"content":["qqe"]}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:22 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:22 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:23 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:23 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 6272 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:23 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:23 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:23 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:23 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:23 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:23 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:23 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:23 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:23 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1270 ms
+2024-01-30 15:23 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:23 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:23 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:23 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:23 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:23 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:23 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:23 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66cb9a63, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@256d8f17, org.springframework.security.web.context.SecurityContextPersistenceFilter@6de4071b, org.springframework.security.web.header.HeaderWriterFilter@29ddaa8e, org.springframework.security.web.authentication.logout.LogoutFilter@50d6af87, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@596d17f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@470866d1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a491a60, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2319c1e0, org.springframework.security.web.session.SessionManagementFilter@5b49b1df, org.springframework.security.web.access.ExceptionTranslationFilter@1c15a6aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@65fe1f47]
+2024-01-30 15:23 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:23 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:23 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:23 com.example.board.Application-Started Application in 3.888 seconds (JVM running for 4.424)
+2024-01-30 15:23 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:23 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:23 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 15:23 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:23 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:23 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:23 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:23 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:23 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:23 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["N"],"appointmentTime":[""],"title":["qweqw"],"content":["qweqwe"]}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:23 c.example.board.common.AopLogService-{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["N"],"appointmentTime":[""],"title":["qweqw"],"content":["qweqwe"]}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:23 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:23 c.example.board.common.AopLogService-{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:23 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:35 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:35 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 7180 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:35 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:35 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:35 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:35 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:35 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:35 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:35 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:35 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:35 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1223 ms
+2024-01-30 15:35 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:35 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:35 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:35 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:35 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:35 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:35 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:35 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58b30e3e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5325674a, org.springframework.security.web.context.SecurityContextPersistenceFilter@61c4fc34, org.springframework.security.web.header.HeaderWriterFilter@623ed5ed, org.springframework.security.web.authentication.logout.LogoutFilter@64e247e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c3a1d7f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c678a1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b49b1df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a0aa5e2, org.springframework.security.web.session.SessionManagementFilter@744199bb, org.springframework.security.web.access.ExceptionTranslationFilter@21539796, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@350d9d23]
+2024-01-30 15:35 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:35 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:35 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:35 com.example.board.Application-Started Application in 4.031 seconds (JVM running for 4.572)
+2024-01-30 15:35 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:35 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:35 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 15:35 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:35 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:35 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:35 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:35 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:35 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:35 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["Y"],"appointmentTime":[""],"title":["aad"],"content":["ffff"]}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:35 c.example.board.common.AopLogService-{"Method Name":"createPost","CRUD Name":"POST","user inputs":{"appointment":["Y"],"appointmentTime":[""],"title":["aad"],"content":["ffff"]}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:35 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:35 c.example.board.common.AopLogService-{"Method Name":"getPostDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:35 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:53 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:53 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:53 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:53 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:53 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:53 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:53 c.example.board.common.AopLogService-{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:53 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-{"Method Name":"authorDetail","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-{"Method Name":"getAllAuthors","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:54 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:54 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:54 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:54 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 5892 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:54 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:54 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:54 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:54 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:54 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:54 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:54 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:54 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:54 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1300 ms
+2024-01-30 15:54 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:54 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:54 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:54 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:54 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:54 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:54 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:54 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:54 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32675dd4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2351255a, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bbac73d, org.springframework.security.web.header.HeaderWriterFilter@22349ad3, org.springframework.security.web.authentication.logout.LogoutFilter@1e487d57, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@67cd193d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55cf5626, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a720ae3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f836d9, org.springframework.security.web.session.SessionManagementFilter@95aeee4, org.springframework.security.web.access.ExceptionTranslationFilter@188b9a1e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@193c3b1c]
+2024-01-30 15:54 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:54 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:54 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:54 com.example.board.Application-Started Application in 4.168 seconds (JVM running for 4.673)
+2024-01-30 15:54 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:54 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:54 o.s.web.servlet.DispatcherServlet-Completed initialization in 1 ms
+2024-01-30 15:54 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:54 c.example.board.common.AopLogService-{"Method Name":"authorCreate","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:54 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorSave","CRUD Name":"POST","user inputs":{"name":["zxcv"],"email":["zxcv"],"password":["zxcv"],"role":["admin"]}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-{"Method Name":"authorSave","CRUD Name":"POST","user inputs":{"name":["zxcv"],"email":["zxcv"],"password":["zxcv"],"role":["admin"]}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"errorHtml","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-{"Method Name":"errorHtml","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:55 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:55 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:56 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:56 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:56 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
+2024-01-30 15:56 com.example.board.Application-Starting Application using Java 17.0.9 on DESKTOP-ON6SB60 with PID 7556 (C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD\out\production\classes started by Playdata in C:\Users\Playdata\IdeaProjects\2024_01_19_BOARD)
+2024-01-30 15:56 com.example.board.Application-No active profile set, falling back to 1 default profile: "default"
+2024-01-30 15:56 o.s.d.r.c.RepositoryConfigurationDelegate-Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-30 15:56 o.s.d.r.c.RepositoryConfigurationDelegate-Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2024-01-30 15:56 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat initialized with port(s): 8081 (http)
+2024-01-30 15:56 o.a.coyote.http11.Http11NioProtocol-Initializing ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:56 o.a.catalina.core.StandardService-Starting service [Tomcat]
+2024-01-30 15:56 o.a.catalina.core.StandardEngine-Starting Servlet engine: [Apache Tomcat/9.0.74]
+2024-01-30 15:56 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring embedded WebApplicationContext
+2024-01-30 15:56 o.s.b.w.s.c.ServletWebServerApplicationContext-Root WebApplicationContext: initialization completed in 1308 ms
+2024-01-30 15:56 o.h.jpa.internal.util.LogHelper-HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-30 15:56 org.hibernate.Version-HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-01-30 15:56 o.h.annotations.common.Version-HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-01-30 15:56 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Starting...
+2024-01-30 15:56 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Start completed.
+2024-01-30 15:56 org.hibernate.dialect.Dialect-HHH000400: Using dialect: org.hibernate.dialect.MariaDBDialect
+2024-01-30 15:56 o.h.e.t.j.p.i.JtaPlatformInitiator-HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-30 15:56 o.s.o.j.LocalContainerEntityManagerFactoryBean-Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:56 o.s.s.web.DefaultSecurityFilterChain-Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@235dacd7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74070994, org.springframework.security.web.context.SecurityContextPersistenceFilter@74ed7111, org.springframework.security.web.header.HeaderWriterFilter@66428512, org.springframework.security.web.authentication.logout.LogoutFilter@95aeee4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4dc16fc9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66e62e19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d359c69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c816f46, org.springframework.security.web.session.SessionManagementFilter@89178b4, org.springframework.security.web.access.ExceptionTranslationFilter@256d8f17, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d387e9b]
+2024-01-30 15:56 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration-spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-30 15:56 o.a.coyote.http11.Http11NioProtocol-Starting ProtocolHandler ["http-nio-8081"]
+2024-01-30 15:56 o.s.b.w.e.tomcat.TomcatWebServer-Tomcat started on port(s): 8081 (http) with context path ''
+2024-01-30 15:56 com.example.board.Application-Started Application in 4.212 seconds (JVM running for 4.739)
+2024-01-30 15:56 o.a.c.c.C.[Tomcat].[localhost].[/]-Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-30 15:56 o.s.web.servlet.DispatcherServlet-Initializing Servlet 'dispatcherServlet'
+2024-01-30 15:56 o.s.web.servlet.DispatcherServlet-Completed initialization in 0 ms
+2024-01-30 15:56 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:56 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:56 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:56 c.example.board.common.AopLogService-{"Method Name":"authorLogin","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:56 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:56 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:56 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"errorHtml","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:56 c.example.board.common.AopLogService-{"Method Name":"errorHtml","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:56 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:56 c.example.board.common.AopLogService-{"Method Name":"home","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:56 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:57 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:57 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:57 c.example.board.common.AopLogService-{"Method Name":"postCreateForm","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:57 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:57 c.example.board.common.AopLogService-Around 입니다.{"Method Name":"errorHtml","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:57 c.example.board.common.AopLogService-[ --  Before executing controller method]
+2024-01-30 15:57 c.example.board.common.AopLogService-{"Method Name":"errorHtml","CRUD Name":"GET","user inputs":{}}
+2024-01-30 15:57 c.example.board.common.AopLogService-[ --  After executing controller method]
+2024-01-30 15:58 o.s.o.j.LocalContainerEntityManagerFactoryBean-Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-30 15:58 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown initiated...
+2024-01-30 15:58 com.zaxxer.hikari.HikariDataSource-HikariPool-1 - Shutdown completed.
