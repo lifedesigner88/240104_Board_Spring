@@ -20,7 +20,6 @@ public class LogTestController {
 
 //    slfj 어노테이션 없이 직접 라이브러리 import 하여 로거 생성 가능.
 //    private static final Logger log = LoggerFactory.getLogger(LogTestController.class);
-
     @GetMapping("/log/test1")
     public String testMethod1() {
 

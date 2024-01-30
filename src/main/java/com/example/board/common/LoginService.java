@@ -38,11 +38,13 @@ public class LoginService implements UserDetailsService {
 
         List<GrantedAuthority> authorities = new ArrayList<>();
 //        Role_권한 이 팬턴으로 스프링에서 기본적으로 권한 체크.
+//        유저객체는 서버의 세션저장소 메모리에 저장된다.
 //        authorities.add(new SimpleGrantedAuthority(author.getRole().name()));
         authorities.add(new SimpleGrantedAuthority("Role_" + author.getRole()));
-        System.out.println(author.getRole().name());
         return new User(author.getEmail(), author.getPassword(), authorities);
 
+
+//        쿠키 : JSESSIONID	7BC8D956B977969ECC64B8228BA5BABE
     }
 
 }
