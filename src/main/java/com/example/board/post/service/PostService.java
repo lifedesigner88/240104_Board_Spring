@@ -36,7 +36,6 @@ public class PostService {
     public Post create(PostCreateReqDto dto, String email) {
 
 //        Authentication aut = SecurityContextHolder.getContext().getAuthentication();
-//        String email = aut.getName();        Authentication aut = SecurityContextHolder.getContext().getAuthentication();
 //        String email = aut.getName();
         Author author = findByEmail(email);
 
